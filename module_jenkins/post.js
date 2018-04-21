@@ -14,7 +14,7 @@ var send=function(mes){
 }
 
 
-send("start bot");
+send("start ngrok jenkins");
 
 exports.send = send;
 

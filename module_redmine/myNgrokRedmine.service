@@ -1,0 +1,10 @@
+[Unit]
+Description = myNgrokRedmine
+
+[Service]
+ExecStart=/home/pi/work/git/myNgrok/module_redmine/start.sh
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

@@ -8,6 +8,6 @@ var post = require('./post');
 		addr: 80,
 	});
 	console.log(url);
-	post.send(url);
+	post.send('redmineへの接続情報です\n' + url);
 })();
 

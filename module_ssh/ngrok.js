@@ -10,7 +10,7 @@ var post = require('./post');
 	});
 
 	var cmd;
-	cmd = "ssh pi@" + url.replace('tcp://','').replace('io:','io -p ');
+	cmd = "sshの接続情報です\nssh pi@" + url.replace('tcp://','').replace('io:','io -p ');
 
 	console.log(cmd);
 	post.send(cmd);

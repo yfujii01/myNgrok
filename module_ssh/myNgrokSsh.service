@@ -1,0 +1,11 @@
+[Unit]
+Description = myNgrokSsh
+
+[Service]
+ExecStart=/home/pi/work/git/myNgrok/module_ssh/start.sh
+Restart=always
+Type=simple
+User=pi
+
+[Install]
+WantedBy=multi-user.target

@@ -8,6 +8,6 @@ var post = require('./post');
 		addr: 7999,
 	});
 	console.log(url);
-	post.send(url);
+	post.send('jenkinsへの接続情報です\n' + url);
 })();
 

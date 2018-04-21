@@ -1,0 +1,10 @@
+[Unit]
+Description = myNgrokJenkins
+
+[Service]
+ExecStart=/home/pi/work/git/myNgrok/module_jenkins/start.sh
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
