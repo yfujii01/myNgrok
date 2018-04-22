@@ -1,5 +1,5 @@
 var ngrok = require('ngrok');
-var post = require('./post');
+var post = require('../post');
 
 (async () => {
 	await ngrok.disconnect();

@@ -1,20 +1,19 @@
 var request = require('request');
-
+var setting = require('./setting.json');
+var url = setting.webhook_url;
+console.log('送信先:' + url);
 
 var send=function(mes){
 	var options = {
-		uri: "https://hooks.slack.com/services/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",
+		uri: url,
 		headers: {"Content-type": "application/json"},
-		json: {
-				"text": mes,
-				"username":'botman',
-		}
+		json: {"text": mes}
 	};
+	console.log('postします:' + mes);
 	request.post(options, function(error, response, body){});
 }
 
-
-send("start ngrok ssh");
+//send("start myNgrok");
 
 exports.send = send;
 
